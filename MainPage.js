@@ -1,4 +1,5 @@
-window.onload = populateMainPage;
+window.onload = nameFieldInit;
+
 function populateMainPage(){
     document.getElementById("mainMenu").innerHTML = "Black Diamond Labs";
     var username = "\0"
@@ -23,7 +24,7 @@ function populateMainPage(){
 
 }
 
-function populateUserID() {
+function nameFieldInit() {
     var userName = "";
 
     if(document.cookie != "") {
