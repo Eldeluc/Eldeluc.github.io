@@ -18,7 +18,7 @@ function populateMainPage(){
 
         if((username == "Eldeluc")&&(password == "P13@$3")) {
             alert("Sign-In Successful ~ Eldeluc")
-            populateUserID()
+            //populateUserID()
         }
     }
 
