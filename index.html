@@ -2,60 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Black Diamond Labs - Computer Repair Services</title>
+    <title>Black Diamond Labs - Computer Repair & IT Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <style>
-        body { font-family: "Lato", sans-serif; margin: 0; padding: 0; }
-        .nav-bar { display: flex; justify-content: space-between; align-items: center; background-color: #111; padding: 10px 20px; color: white; }
-        .nav-bar h1 { margin: 0; font-size: 24px; }
-        .nav-bar a { color: #818181; text-decoration: none; padding: 8px 15px; font-size: 18px; transition: 0.3s; }
-        .nav-bar a:hover { color: #f1f1f1; }
-        .section { padding: 50px 20px; text-align: center; }
-        #about { background-color: #229954; color: white; }
-        #services { background-color: #f4f4f4; color: #333; }
-        .footer { background-color: #333; color: white; text-align: center; padding: 20px 0; }
-        .footer a { color: #229954; text-decoration: none; }
+        /* General Body and Font Styles */
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Container for content sections */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Header and Navigation Bar */
+        header {
+            background-color: #111;
+            color: white;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #229954 3px solid;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        
+        /* Hero Section */
+        #showcase {
+            min-height: 400px;
+            background: #333 url('https://source.unsplash.com/1600x900/?computer,repair') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        
+        #showcase p {
+            font-size: 20px;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            background-color: #229954;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        /* Services Section */
+        #services {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            vertical-align: top;
+        }
+
+        /* Contact Form Section */
+        #contact {
+            text-align: center;
+            background-color: #ddd;
+            padding: 50px 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #229954;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #229954;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <header class="nav-bar">
-        <h1>Black Diamond Labs</h1>
-        <div>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="#showcase">Black Diamond Labs</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div id="hero" class="section">
-        <h2>Expert Computer Repair & IT Solutions</h2>
-        <p>Reliable service for all your PC and laptop needs.</p>
-        <button onclick="location.href='#services'">View Our Services</button>
-    </div>
-
-    <div id="about" class="section">
-        <h2>About Black Diamond Labs</h2>
-        <p>Tell your story here. Explain your passion for technology and commitment to helping people. Mention your experience and what sets you apart.</p>
-    </div>
-
-    <div id="services" class="section">
-        <h2>Services Offered</h2>
-        <ul>
-            <li>Virus & Malware Removal</li>
-            <li>Hardware Upgrades & Repair</li>
-            <li>Software Troubleshooting</li>
-            <li>Data Recovery</li>
-        </ul>
-    </div>
-
-    <div id="contact" class="section">
-        <h2>Get In Touch</h2>
-        <p>Ready to get started? Fill out the form below and we'll get back to you soon.</p>
+    <section id="showcase">
+        <div class="container">
+            <h1>Expert Computer Repair & IT Services</h1>
+            <p>Your trusted partner for all things tech. We fix, restore, and optimize your devices.</p>
         </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Black Diamond Labs | <a href="https://www.PayPal.Me/Eldeluc">Support Us</a></p>
+    <section id="about">
+        <div class="container">
+            <h2>About Black Diamond Labs</h2>
+            <p>Welcome to Black Diamond Labs, where we are passionate about technology and dedicated to providing top-notch computer repair services. Our mission is to solve your tech problems efficiently and affordably, so you can get back to what matters most. We believe in honest work and building lasting relationships with our clients.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <div class="service-item">
+                <h3>Hardware Repair & Upgrades</h3>
+                <p>From broken screens to failing hard drives, we diagnose and repair all types of hardware issues. We also offer performance-boosting upgrades like RAM and SSD installation.</p>
+            </div>
+            <div class="service-item">
+                <h3>Virus & Malware Removal</h3>
+                <p>Is your computer slow or behaving strangely? We'll deep-scan and remove viruses, spyware, and other malicious software to restore your system's performance and security.</p>
+            </div>
+            <div class="service-item">
+                <h3>Data Recovery</h3>
+                <p>Accidentally deleted important files or have a failing hard drive? We offer professional data recovery services to help you retrieve your precious photos, documents, and other files.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to get your computer fixed? Fill out the form below and we'll get back to you with a free quote and consultation.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Describe your computer issue..." rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Black Diamond Labs &copy; 2025</p>
+        <p><a href="https://www.PayPal.Me/Eldeluc">Donate to Support Us</a></p>
     </footer>
 
 </body>
