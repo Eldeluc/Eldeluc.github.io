@@ -2,74 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Black Diamond Labs</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    <title>Black Diamond Labs - Computer Repair Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: "Lato", sans-serif; margin: 0; padding: 0; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; background-color: #111; padding: 10px 20px; color: white; }
+        .nav-bar h1 { margin: 0; font-size: 24px; }
+        .nav-bar a { color: #818181; text-decoration: none; padding: 8px 15px; font-size: 18px; transition: 0.3s; }
+        .nav-bar a:hover { color: #f1f1f1; }
+        .section { padding: 50px 20px; text-align: center; }
+        #about { background-color: #229954; color: white; }
+        #services { background-color: #f4f4f4; color: #333; }
+        .footer { background-color: #333; color: white; text-align: center; padding: 20px 0; }
+        .footer a { color: #229954; text-decoration: none; }
+    </style>
 </head>
-<body bgcolor="#229954">
+<body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">You Lost The Game</a>
-  <a href="https://www.PayPal.Me/Eldeluc">Donate</a>
-</div>
+    <header class="nav-bar">
+        <h1>Black Diamond Labs</h1>
+        <div>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
 
-<h1>Welcome to the labs!</h1>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+    <div id="hero" class="section">
+        <h2>Expert Computer Repair & IT Solutions</h2>
+        <p>Reliable service for all your PC and laptop needs.</p>
+        <button onclick="location.href='#services'">View Our Services</button>
+    </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    <div id="about" class="section">
+        <h2>About Black Diamond Labs</h2>
+        <p>Tell your story here. Explain your passion for technology and commitment to helping people. Mention your experience and what sets you apart.</p>
+    </div>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+    <div id="services" class="section">
+        <h2>Services Offered</h2>
+        <ul>
+            <li>Virus & Malware Removal</li>
+            <li>Hardware Upgrades & Repair</li>
+            <li>Software Troubleshooting</li>
+            <li>Data Recovery</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <p>Ready to get started? Fill out the form below and we'll get back to you soon.</p>
+        </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Black Diamond Labs | <a href="https://www.PayPal.Me/Eldeluc">Support Us</a></p>
+    </footer>
+
 </body>
-</html> 
+</html>
